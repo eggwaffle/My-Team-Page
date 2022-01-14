@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins&family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: 4rem auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Header */
+header {
+  width: 90%;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  letter-spacing: -0.08em;
+}
+
+.header-col {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+h1 {
+  padding-bottom: 1em;
+  font-weight: 700;
+  font-family: 'PT Serif', serif;
+}
+
+h3 {
+  padding-bottom: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Main */
+main {
+  margin-top: 4rem;
+  justify-content: space-around;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.035em;
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.position {
+  font-family: 'PT Serif', serif;
+  font-size: 0.75em;
+  font-weight: 400;
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+}
+
+.name {
+  font-size: 1em;
+}
+
+/* For desktop: */
+.member {
+  display: flex;
+  width: 30%;
+}
+
+.member:nth-child(3n-1) {
+  margin-top: 5em;
+}
+
+/* Footer */
+footer {
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75em;
+  font-weight: 500;
+  text-align: center;
+  color: #BDBDBD;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+
+  .container {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  header {
+    margin-left: 1rem;
+  }
+
+  .header-col {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+  .member {
+    display: flex;
+    width: 40%;
+  }
+
+  .member:nth-child(3n-1) {
+    margin-top: 0;
+  }
+
+  .member:nth-child(2n) {
+    margin-top: 2em;
+  }
+
+  footer {
+    margin-top: 2rem;
+  }
+}
+
